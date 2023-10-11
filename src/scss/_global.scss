@@ -1,24 +1,31 @@
-html,
-body {
-  height: 100vh;
+html {
   overflow-x: hidden;
   min-width: 320px;
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 body {
-  display: flex;
-  flex-direction: column;
   text-rendering: optimizeSpeed;
-  //background-color: #E5E5E5;
   font-size: 1.6rem;
   line-height: 1.5;
   color: var(--charcoal);
-  margin: 0 auto;
   font-family: 'Manrope', sans-serif;
   font-weight: 500;
+  &.nav-sctive {
+    overflow: hidden;
+  }
 }
-.main {
-  flex-grow: 1;
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: hsl(0, 0%, 90%);
+}
+::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 0%, 80%);
+  &:hover {
+    background-color: hsl(0, 0%, 70%);
+  }
 }
 
 h1 {
@@ -98,7 +105,7 @@ textarea {
   width: 100%;
   height: 100vh;
   background-color: var(--raisin-black);
-  z-index: 2;
+  z-index: 1;
   transition: var(--transition-1);
   pointer-events: none;
   opacity: 0;

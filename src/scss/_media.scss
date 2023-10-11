@@ -14,20 +14,22 @@
   .header-nav {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -300px;
     background-color: var(--raisin-black);
     height: 100vh;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     padding: 30px;
     display: flex;
     flex-direction: column;
     gap: 40px;
     justify-content: space-between;
-    transform: translateX(-300px);
     transition: var(--transition-3);
-    z-index: 3;
+    z-index: 2;
+    visibility: hidden;
     &.active {
-      transform: translateX(0);
+      visibility: visible;
+      transform: translateX(300px);
     }
     &__top {
       display: flex;
@@ -56,6 +58,9 @@
       flex-direction: column;
       flex-grow: 1;
       gap: 20px;
+    }
+    &__link {
+      color: #fff !important;
     }
     &__info {
       display: block;

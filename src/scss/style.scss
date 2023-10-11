@@ -3,12 +3,14 @@
 @import 'reset';
 
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  // left: 50%;
+  // transform: translateX(-50%);
   width: 100%;
-  z-index: 3;
+  z-index: 4;
+  box-shadow: 0 0 20px rgba(31, 35, 41, 0.05);
   &-inner {
     display: flex;
     align-items: center;
@@ -17,7 +19,7 @@
     padding-block: 20px;
   }
   &-logo {
-    &.dark {
+    .logo-dark {
       display: none;
     }
   }
@@ -77,13 +79,21 @@
   }
 }
 .header.active {
+  position: fixed;
   background-color: #fff;
+  animation: slideIn 0.5s ease forwards;
   .header-logo {
-    &.dark {
+    .logo-dark {
       display: block;
     }
-    &.light {
+    .logo-light {
       display: none;
+    }
+  }
+  .header-nav__link {
+    color: var(--charcoal);
+    &:hover {
+      color: var(--violet-blue-crayola);
     }
   }
   .header-btn {
@@ -278,6 +288,14 @@
   }
 }
 
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
 @keyframes pulse {
   0% {
     box-shadow: 0 0 0 rgba(255, 255, 255, 0.7);
