@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adex</title>
+    <!--
+    - favicon
+  -->
+    <!-- <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon" /> -->
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- <svg class="icon">
+      <use xlink:href="images/icon/sprite-icon.svg#clock"></use>
+    </svg> -->
+    <header class="header">
+      <div class="container header-inner">
+        <a href="#" class="header-logo light">
+          <img src="images/logo-light.svg" width="74" height="24" alt="logo" />
+        </a>
+        <a href="#" class="header-logo dark">
+          <img src="images/logo-dark.svg" width="74" height="24" alt="logo" />
+        </a>
+        <div class="header-right">
+          <nav class="header-nav">
+            <div class="header-nav__top">
+              <a href="#" class="header-nav__logo">
+                <img src="images/logo-light.svg" alt="logo" />
+              </a>
+              <button class="header-nav__close headerBtn">
+                <svg class="icon">
+                  <use xlink:href="images/icon/sprite-icon.svg#close"></use>
+                </svg>
+              </button>
+            </div>
+            <ul class="header-nav__list">
+              <li><a href="#" class="header-nav__link">Home</a></li>
+              <li><a href="#" class="header-nav__link">About</a></li>
+              <li><a href="#" class="header-nav__link">Project</a></li>
+              <li><a href="#" class="header-nav__link">Blog</a></li>
+              <li><a href="#" class="header-nav__link">Contact</a></li>
+            </ul>
+            <div class="header-nav__inner">
+              <a href="#" class="header-nav__info">info@email.com </a>
+              <a href="#" class="header-nav__info">00 (123) 456 78 90</a>
+            </div>
+            <ul class="header-nav__socList">
+              <li>
+                <a href="#" class="header-nav__socLink">
+                  <svg class="icon">
+                    <use
+                      xlink:href="images/icon/sprite-icon.svg#instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="header-nav__socLink">
+                  <svg class="icon">
+                    <use
+                      xlink:href="images/icon/sprite-icon.svg#facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="header-nav__socLink">
+                  <svg class="icon">
+                    <use xlink:href="images/icon/sprite-icon.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="header-nav__socLink">
+                  <svg class="icon">
+                    <use xlink:href="images/icon/sprite-icon.svg#youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="header-nav__socLink">
+                  <svg class="icon">
+                    <use
+                      xlink:href="images/icon/sprite-icon.svg#dribbble"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <button class="header-btn btn">Free Trial</button>
+          <button class="burger headerBtn">
+            <span class="burger-line"></span>
+          </button>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </header>
+    <main>
+      <article>
+        <section class="hero">
+          <div class="container hero-inner">
+            <div class="hero-info">
+              <h1 class="hero-info__title">
+                Crafting project specific solutions with expertise.
+              </h1>
+              <div class="hero-info__desc">
+                We’re a creative company that focuses on establishing long-
+                <br />
+                term relationships with customers.
+              </div>
+
+              <div class="hero-info__buttons">
+                <button class="hero-btn btn">Explore Now</button>
+                <button class="hero-btn btn btn--empty">Contact Us</button>
+              </div>
+            </div>
+            <div class="hero-slider">
+              <div class="hero-slider__inner">
+                <ul class="hero-slider__container">
+                  <li class="hero-slider__item">
+                    <div class="hero-slider__video">
+                      <figure
+                        class="hero-slider__holder"
+                        style="--width: 575; --height: 550"
+                      >
+                        <img
+                          src="images/hero-slide-2.jpg"
+                          class="hero-slider__img"
+                          width="575"
+                          height="550"
+                          alt="hero slide"
+                        />
+                      </figure>
+                      <button class="video-btn">
+                        <svg class="icon">
+                          <use
+                            xlink:href="images/icon/sprite-icon.svg#play"
+                          ></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="hero-slider__item">
+                    <figure
+                      class="hero-slider__holder"
+                      style="--width: 575; --height: 550"
+                    >
+                      <img
+                        src="images/hero-slide-1.jpg"
+                        class="hero-slider__img"
+                        width="575"
+                        height="550"
+                        alt="hero slide"
+                      />
+                    </figure>
+                  </li>
+                  <li class="hero-slider__item">
+                    <figure
+                      class="hero-slider__holder"
+                      style="--width: 575; --height: 550"
+                    >
+                      <img
+                        src="images/hero-slide-3.jpg"
+                        class="hero-slider__img"
+                        width="575"
+                        height="550"
+                        alt="hero slide"
+                      />
+                    </figure>
+                  </li>
+                </ul>
+              </div>
+              <button class="hero-slider__btn prev">
+                <svg class="icon">
+                  <use
+                    xlink:href="images/icon/sprite-icon.svg#arrow-right"
+                  ></use>
+                </svg>
+              </button>
+              <button class="hero-slider__btn next">
+                <svg class="icon">
+                  <use
+                    xlink:href="images/icon/sprite-icon.svg#arrow-left"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="about">
+          <div class="container">
+            <div class="section-top center">
+              <div class="section-top__subtitle">What We Do?</div>
+              <h2 class="section-top__title">
+                The service we offer is specifically <br />
+                designed to meet your needs.
+              </h2>
+            </div>
+            <div class="about-cards">
+              <div class="about-card">
+                <div class="about-card__icon">
+                  <svg class="icon">
+                    <use xlink:href="images/icon/sprite-icon.svg#mobile"></use>
+                  </svg>
+                </div>
+                <h4 class="about-card__title">24/7 Support</h4>
+                <p class="about-card__text">
+                  Nulla vitae elit libero, a pharetra augue. Donec id elit non
+                  mi porta gravida at eget metus cras justo.
+                </p>
+                <a href="#" class="about-card__link">
+                  <span>Learn More</span>
+                  <svg class="icon">
+                    <use
+                      xlink:href="images/icon/sprite-icon.svg#arrow-right"
+                    ></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="about-card">
+                <div class="about-card__icon">
+                  <svg class="icon">
+                    <use xlink:href="images/icon/sprite-icon.svg#shield"></use>
+                  </svg>
+                </div>
+                <h4 class="about-card__title">Secure Payments</h4>
+                <p class="about-card__text">
+                  Nulla vitae elit libero, a pharetra augue. Donec id elit non
+                  mi porta gravida at eget metus cras justo.
+                </p>
+                <a href="#" class="about-card__link">
+                  <span>Learn More</span>
+                  <svg class="icon">
+                    <use
+                      xlink:href="images/icon/sprite-icon.svg#arrow-right"
+                    ></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="about-card">
+                <div class="about-card__icon">
+                  <svg class="icon">
+                    <use xlink:href="images/icon/sprite-icon.svg#storm"></use>
+                  </svg>
+                </div>
+                <h4 class="about-card__title">Daily Updates</h4>
+                <p class="about-card__text">
+                  Nulla vitae elit libero, a pharetra augue. Donec id elit non
+                  mi porta gravida at eget metus cras justo.
+                </p>
+                <a href="#" class="about-card__link">
+                  <span>Learn More</span>
+                  <svg class="icon">
+                    <use
+                      xlink:href="images/icon/sprite-icon.svg#arrow-right"
+                    ></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="about-card">
+                <div class="about-card__icon">
+                  <svg class="icon">
+                    <use xlink:href="images/icon/sprite-icon.svg#chart"></use>
+                  </svg>
+                </div>
+                <h4 class="about-card__title">Market Research</h4>
+                <p class="about-card__text">
+                  Nulla vitae elit libero, a pharetra augue. Donec id elit non
+                  mi porta gravida at eget metus cras justo.
+                </p>
+                <a href="#" class="about-card__link">
+                  <span>Learn More</span>
+                  <svg class="icon">
+                    <use
+                      xlink:href="images/icon/sprite-icon.svg#arrow-right"
+                    ></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+    <fotter class="footer"></fotter>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

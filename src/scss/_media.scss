@@ -1,0 +1,115 @@
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+  .header-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--raisin-black);
+    height: 100vh;
+    width: 300px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-between;
+    transform: translateX(-300px);
+    transition: var(--transition-3);
+    z-index: 3;
+    &.active {
+      transform: translateX(0);
+    }
+    &__top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    &__close {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--white_a8);
+      display: grid;
+      place-content: center;
+      transition: var(--transition-1);
+      .icon {
+        fill: #fff;
+        width: 20px;
+        height: 20px;
+      }
+      &:hover {
+        background: var(--white_a12);
+      }
+    }
+    &__list {
+      flex-direction: column;
+      flex-grow: 1;
+      gap: 20px;
+    }
+    &__info {
+      display: block;
+      color: #fff;
+      transition: var(--transition-1);
+      padding-block: 3px;
+      &:hover {
+        color: var(--blue-crayola);
+      }
+    }
+    &__socList {
+      display: flex;
+      gap: 20px;
+    }
+    &__socLink {
+      transition: var(--transition-1);
+      .icon {
+        width: 20px;
+        height: 20px;
+        fill: #fff;
+      }
+      &:hover {
+        transform: translateY(-4px);
+      }
+    }
+  }
+  .burger {
+    display: flex;
+  }
+}
+
+@media (max-width: 850px) {
+  .hero {
+    &-inner {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    &-info {
+      text-align: center;
+      &__desc {
+        font-size: 1.8rem;
+      }
+      &__buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+    }
+  }
+}
+@media (max-width: 756px) {
+  .header-btn {
+    display: none;
+  }
+}
+@media (min-width: 575px) {
+  .hero-slider {
+    &__btn {
+      width: 40px;
+      height: 40px;
+      .icon {
+        width: 18px;
+        height: 16px;
+      }
+    }
+  }
+}
