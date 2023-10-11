@@ -211,7 +211,7 @@
   &-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 35px;
+    gap: 25px;
     margin-top: 50px;
   }
 }
@@ -241,6 +241,12 @@
       height: 30px;
       transition: inherit;
     }
+  }
+  &__text {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   &__link {
     display: flex;
