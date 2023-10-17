@@ -46,9 +46,11 @@
     transition: var(--transition-1);
     &:hover {
       color: var(--white_a70);
+      transform: translate(-2px, 2px);
     }
   }
 }
+
 .burger {
   position: relative;
   width: 30px;
@@ -147,14 +149,15 @@
   &__container {
     position: relative;
     display: flex;
+    align-items: flex-start;
     gap: 8px;
     transition: var(--transition-2);
   }
   &__item {
-    width: 100%;
     min-width: 100%;
-    overflow: hidden;
+    width: 100%;
     border-radius: 10px;
+    overflow: hidden;
   }
   &__holder {
     aspect-ratio: var(--width) / var(--height);
@@ -207,10 +210,18 @@
       width: 70px;
       height: 70px;
       animation: pulse 2s ease infinite;
+      transition: var(--transition-1);
       .icon {
         width: 20px;
         height: 20px;
         fill: var(--charcoal);
+        transition: inherit;
+      }
+      &:hover {
+        color: #757ed1;
+        .icon {
+          fill: var(--violet-blue-crayola);
+        }
       }
     }
   }
@@ -576,7 +587,7 @@
 }
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 0 rgba(117, 126, 209, 0.7);
   }
   70% {
     box-shadow: 0 0 0 20px transparent;

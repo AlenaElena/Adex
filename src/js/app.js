@@ -31,6 +31,53 @@ window.addEventListener('scroll', function () {
   }
 });
 
+// hero-slider
+const sliders = document.querySelectorAll('.hero-slider');
+const innitSlider = function (currentSlider) {
+  const sliderContainer = currentSlider.querySelector(
+    '.hero-slider__container'
+  );
+  const sliderPrevBtn = currentSlider.querySelector('.next');
+  const sliderNextBtn = currentSlider.querySelector('.prev');
+
+  let currentSliderPos = 0;
+
+  const moveSliderItem = function () {
+    sliderContainer.style.transform = `translateX(-${sliderContainer.children[currentSliderPos].offsetLeft}px)`;
+  };
+
+  const slideNext = function () {
+    const slideEnd = currentSliderPos >= sliderContainer.childElementCount - 1;
+    if (slideEnd) {
+      currentSliderPos = 0;
+    } else {
+      currentSliderPos++;
+    }
+    moveSliderItem();
+  };
+  sliderNextBtn.addEventListener('click', slideNext);
+
+  const slidePrev = function () {
+    if (currentSliderPos <= 0) {
+      currentSliderPos = sliderContainer.childElementCount - 1;
+    } else {
+      currentSliderPos--;
+    }
+    moveSliderItem();
+  };
+  sliderPrevBtn.addEventListener('click', slidePrev);
+
+  const dontHaveExtraItem = sliderContainer.childElementCount <= 1;
+  if (dontHaveExtraItem) {
+    sliderNextBtn.style.display = 'none';
+    sliderPrevBtn.style.display = 'none';
+  }
+};
+
+for (let i = 0; i < sliders.length; i++) {
+  innitSlider(sliders[i]);
+}
+
 // accordion
 const accordionCard = document.querySelectorAll('.accordion-card');
 let lastActiveAccordion = accordionCard[0];
