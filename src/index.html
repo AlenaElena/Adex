@@ -31,9 +31,6 @@
     />
   </head>
   <body>
-    <!-- <svg class="icon">
-      <use xlink:href="images/icon/sprite-icon.svg#clock"></use>
-    </svg> -->
     <header class="header">
       <div class="container header-inner">
         <a href="#" class="header-logo">
@@ -75,9 +72,9 @@
               <a href="#" class="header-nav__info">info@email.com </a>
               <a href="#" class="header-nav__info">00 (123) 456 78 90</a>
             </div>
-            <ul class="header-nav__socList">
+            <ul class="socList">
               <li>
-                <a href="#" class="header-nav__socLink">
+                <a href="#" class="socList-link">
                   <svg class="icon">
                     <use
                       xlink:href="images/icon/sprite-icon.svg#instagram"
@@ -86,7 +83,7 @@
                 </a>
               </li>
               <li>
-                <a href="#" class="header-nav__socLink">
+                <a href="#" class="socList-link">
                   <svg class="icon">
                     <use
                       xlink:href="images/icon/sprite-icon.svg#facebook"
@@ -95,21 +92,21 @@
                 </a>
               </li>
               <li>
-                <a href="#" class="header-nav__socLink">
+                <a href="#" class="socList-link">
                   <svg class="icon">
                     <use xlink:href="images/icon/sprite-icon.svg#twitter"></use>
                   </svg>
                 </a>
               </li>
               <li>
-                <a href="#" class="header-nav__socLink">
+                <a href="#" class="socList-link">
                   <svg class="icon">
                     <use xlink:href="images/icon/sprite-icon.svg#youtube"></use>
                   </svg>
                 </a>
               </li>
               <li>
-                <a href="#" class="header-nav__socLink">
+                <a href="#" class="socList-link">
                   <svg class="icon">
                     <use
                       xlink:href="images/icon/sprite-icon.svg#dribbble"
@@ -473,33 +470,275 @@
 
         <section class="stats">
           <div class="container">
-          <ul class="stats-list">
-            <li class="stats-item">
-              <h1 class="stats-item__title">7518</h1>
-              <div class="stats-item__desc">Completed Projects</div>
-            </li>
-            <li class="stats-item">
-              <h1 class="stats-item__title">3472</h1>
-              <div class="stats-item__desc">Happy Customers</div>
-            </li>
-            <li class="stats-item">
-              <h1 class="stats-item__title">2184</h1>
-              <div class="stats-item__desc">Expert Employees</div>
-            </li>
-            <li class="stats-item">
-              <h1 class="stats-item__title">4523</h1>
-              <div class="stats-item__desc">Awards Won</div>
-            </li>
-          </ul>
-        </div>
+            <ul class="stats-list">
+              <li class="stats-item">
+                <h1 class="stats-item__title">7518</h1>
+                <div class="stats-item__desc">Completed Projects</div>
+              </li>
+              <li class="stats-item">
+                <h1 class="stats-item__title">3472</h1>
+                <div class="stats-item__desc">Happy Customers</div>
+              </li>
+              <li class="stats-item">
+                <h1 class="stats-item__title">2184</h1>
+                <div class="stats-item__desc">Expert Employees</div>
+              </li>
+              <li class="stats-item">
+                <h1 class="stats-item__title">4523</h1>
+                <div class="stats-item__desc">Awards Won</div>
+              </li>
+            </ul>
+          </div>
         </section>
 
         <section class="project">
-          <div class="container"></div>
+          <div class="container">
+            <div class="section-top center">
+              <div class="section-top__subtitle">Case Studies</div>
+              <h2 class="section-top__title">
+                Check out some of our awesome projects <br />
+                with creative ideas and great design.
+              </h2>
+            </div>
+            <div class="project-box">
+              <div class="project-item">
+                <figure
+                  class="project-item__img"
+                  style="--width: 560; --height: 350"
+                >
+                  <img
+                    src="images/blog-1.jpg"
+                    width="560"
+                    height="350"
+                    alt="Ligula tristique quis risus"
+                  />
+                </figure>
+                <div class="project-item__info">
+                  <a href="#">
+                    <h3 class="project-item__title">
+                      Ligula tristique quis risus
+                    </h3>
+                  </a>
+                  <p class="project-item__text">
+                    Mauris convallis non ligula non interdum. Gravida vulputate
+                    convallis tempus vestibulum cras imperdiet nun eu dolor.
+                  </p>
+                  <div class="project-item__bottom">
+                    <a href="#" class="project-item__link">
+                      <svg class="icon">
+                        <use
+                          xlink:href="images/icon/sprite-icon.svg#calendar"
+                        ></use>
+                      </svg>
+                      <span>14 Apr 2024</span>
+                    </a>
+                    <a href="#" class="project-item__link">
+                      <svg class="icon">
+                        <use
+                          xlink:href="images/icon/sprite-icon.svg#file"
+                        ></use>
+                      </svg>
+                      <span>Coding</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-item">
+                <figure
+                  class="project-item__img"
+                  style="--width: 560; --height: 350"
+                >
+                  <img
+                    src="images/blog-2.jpg"
+                    width="560"
+                    height="350"
+                    alt="Nullam id dolor elit id nibh"
+                  />
+                </figure>
+                <div class="project-item__info">
+                  <a href="#">
+                    <h3 class="project-item__title">
+                      Nullam id dolor elit id nibh
+                    </h3>
+                  </a>
+                  <p class="project-item__text">
+                    Mauris convallis non ligula non interdum. Gravida vulputate
+                    convallis tempus vestibulum cras imperdiet nun eu dolor.
+                    Gravida vulputate convallis tempus vestibulum cras imperdiet
+                    nun eu dolor.
+                  </p>
+                  <div class="project-item__bottom">
+                    <a href="#" class="project-item__link">
+                      <svg class="icon">
+                        <use
+                          xlink:href="images/icon/sprite-icon.svg#calendar"
+                        ></use>
+                      </svg>
+                      <span>29 Mar 2024</span>
+                    </a>
+                    <a href="#" class="project-item__link">
+                      <svg class="icon">
+                        <use
+                          xlink:href="images/icon/sprite-icon.svg#file"
+                        ></use>
+                      </svg>
+                      <span> Workspace</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-item">
+                <figure
+                  class="project-item__img"
+                  style="--width: 560; --height: 350"
+                >
+                  <img
+                    src="images/blog-3.jpg"
+                    width="560"
+                    height="350"
+                    alt="Ultricies fusce porta elit"
+                  />
+                </figure>
+                <div class="project-item__info">
+                  <a href="#">
+                    <h3 class="project-item__title">
+                      Ultricies fusce porta elit
+                    </h3>
+                  </a>
+                  <p class="project-item__text">
+                    Mauris convallis non ligula non interdum. Mauris convallis
+                    non ligula non interdum. Mauris convallis non ligula non
+                    interdum. Mauris convallis non ligula non interdum.
+                  </p>
+                  <div class="project-item__bottom">
+                    <a href="#" class="project-item__link">
+                      <svg class="icon">
+                        <use
+                          xlink:href="images/icon/sprite-icon.svg#calendar"
+                        ></use>
+                      </svg>
+                      <span>26 Feb 2024</span>
+                    </a>
+                    <a href="#" class="project-item__link">
+                      <svg class="icon">
+                        <use
+                          xlink:href="images/icon/sprite-icon.svg#file"
+                        ></use>
+                      </svg>
+                      <span>Meeting</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="cta">
+          <div class="container cta-inner">
+            <h2 class="cta-title">
+              Join our community by using our services and grow your business.
+            </h2>
+            <button class="cta-btn btn">Try it For Free</button>
+          </div>
         </section>
       </article>
     </main>
-    <fotter class="footer"></fotter>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-item">
+          <a href="#" class="footer-item__logo">
+            <img src="images/logo-light.svg" alt="logo" />
+          </a>
+          <div class="footer-item__copy">
+            &copy; 2024
+            <a href="https://github.com/AlenaElena/Adex">AlenaElena/Adex</a> All
+            rights reserved.
+          </div>
+          <ul class="socList">
+            <li>
+              <a href="#" class="socList-link">
+                <svg class="icon">
+                  <use xlink:href="images/icon/sprite-icon.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="socList-link">
+                <svg class="icon">
+                  <use xlink:href="images/icon/sprite-icon.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="socList-link">
+                <svg class="icon">
+                  <use xlink:href="images/icon/sprite-icon.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="socList-link">
+                <svg class="icon">
+                  <use xlink:href="images/icon/sprite-icon.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="socList-link">
+                <svg class="icon">
+                  <use xlink:href="images/icon/sprite-icon.svg#dribbble"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <h4 class="footer-item__subtitle">Get in Touch</h4>
+          <address class="footer-item__address">
+            Moonshine St. 14/05 Light City, London, United Kingdom
+          </address>
+          <a href="#" class="footer-item__link">info@email.com </a>
+          <a href="#" class="footer-item__link"> 00 (123) 456 78 90</a>
+        </div>
+        <div class="footer-item">
+          <h4 class="footer-item__subtitle">Learn More</h4>
+          <ul class="footer-item__list">
+            <li>
+              <a href="#" class="footer-item__link">About Us</a>
+            </li>
+            <li>
+              <a href="#" class="footer-item__link">Our Story</a>
+            </li>
+            <li>
+              <a href="#" class="footer-item__link">Projects</a>
+            </li>
+            <li>
+              <a href="#" class="footer-item__link">Terms of Use</a>
+            </li>
+            <li>
+              <a href="#" class="footer-item__link">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <h4 class="footer-item__subtitle">Our Newsletter</h4>
+          <p class="footer-item__text">
+            Subscribe to our newsletter to get our news & deals delivered to
+            you.
+          </p>
+          <form action="#" class="footer-item__form">
+            <div class="footer-item__inner">
+              <input
+                type="email"
+                class="footer-item__input"
+                placeholder="Email Address"
+              />
+              <button class="footer-item__btn">Join</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
     <script src="js/app.min.js"></script>
   </body>
 </html>

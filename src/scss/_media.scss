@@ -27,6 +27,12 @@
       width: 100%;
     }
   }
+
+  .project {
+    &-box {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 }
 @media (max-width: 992px) {
   .header-nav {
@@ -89,20 +95,8 @@
         color: var(--blue-crayola);
       }
     }
-    &__socList {
+    .socList {
       display: flex;
-      gap: 20px;
-    }
-    &__socLink {
-      transition: var(--transition-1);
-      .icon {
-        width: 20px;
-        height: 20px;
-        fill: #fff;
-      }
-      &:hover {
-        transform: translateY(-4px);
-      }
     }
   }
   .burger {
@@ -114,6 +108,28 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 40px 30px;
       padding: 40px 30px !important;
+    }
+  }
+
+  .cta {
+    &-inner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &-title {
+      max-width: 90%;
+    }
+  }
+
+  .footer {
+    &-inner {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px 20px;
+    }
+  }
+  .footer-item {
+    &__address {
+      max-width: 100%;
     }
   }
 }
@@ -144,7 +160,8 @@
   .hero {
     padding-block: 160px 90px;
   }
-  .about {
+  .about,
+  .project {
     padding-block: 90px;
   }
 
@@ -162,6 +179,12 @@
       &:nth-child(even) {
         flex-direction: column-reverse;
       }
+    }
+  }
+
+  .project {
+    &-box {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 }
@@ -184,6 +207,18 @@
   .stats {
     &-list {
       grid-template-columns: 1fr;
+    }
+  }
+
+  .project-item {
+    &__info {
+      padding: 20px;
+    }
+  }
+
+  .footer {
+    &-inner {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 }

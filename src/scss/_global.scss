@@ -58,6 +58,7 @@ button {
 }
 input,
 textarea {
+  border: none;
   background: none;
   display: block;
   width: 100%;
@@ -127,5 +128,26 @@ textarea {
     text-transform: uppercase;
     margin-bottom: 15px;
     font-weight: 700;
+  }
+}
+
+.socList {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  &-link {
+    transition: var(--transition-3);
+    .icon {
+      fill: #fff;
+      width: 20px;
+      height: 20px;
+      transition: inherit;
+    }
+    &:hover {
+      transform: translateY(-4px);
+      .icon {
+        transform: scale(1.1);
+      }
+    }
   }
 }
